@@ -1,0 +1,20 @@
+[worldserver]
+
+###################################################################################################
+#
+#    DefendCity.Enable
+#        Description: Enable DefendCity
+#        Default:     1	- (Enabled)
+#                     0	- (Disabled)
+
+DefendCity.Enable = 1
+
+#   DefendCity.Announce
+#        Description: Announce Module
+#        Default:     1 - (Enabled)
+#                     0 - (Disabled)
+
+DefendCity.Announce = 1
+
+#
+###################################################################################################
