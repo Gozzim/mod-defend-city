@@ -3,7 +3,7 @@
 ## Defend City
 
 [![core-build](https://github.com/Gozzim/mod-defend-city/actions/workflows/core-build.yml/badge.svg)](https://github.com/Gozzim/mod-defend-city)
-[![CodeFactor](https://www.codefactor.io/repository/github/gozzim/mod-defend-city)](https://www.codefactor.io/repository/github/gozzim/mod-defend-city)
+[![CodeFactor](https://www.codefactor.io/repository/github/gozzim/mod-defend-city/badge)](https://www.codefactor.io/repository/github/gozzim/mod-defend-city)
 
 ## Description
 
