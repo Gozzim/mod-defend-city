@@ -25,6 +25,18 @@ public:
             }
         }
     }
+
+    void OnPlayerUpdateArea(Player* player, uint32 oldArea, uint32 newArea)
+    {
+        // if enters area around thrall, ask to join group
+        if (player->GetTeamId() != TEAM_HORDE || newArea != 1637 || !sDefendCityMgr->isUnderAttack(player->GetAreaId()))
+        {
+            return;
+        }
+
+        // TODO
+    }
+
 };
 
 void AddSC_DefendCity()

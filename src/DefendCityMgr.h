@@ -6,6 +6,14 @@
 #include "Player.h"
 #include "ScriptMgr.h"
 
+struct DefendCityData
+{
+    bool underAttack;
+    uint32 underAttackTime;
+    std::vector<uint32> defenseGroupIDs;
+    uint32 defensePhaseID;
+};
+
 class DefendCityMgr
 {
 public:
@@ -13,8 +21,17 @@ public:
 
     bool DefendCityEnabled;
     bool Announce;
+    bool TeleportEnabled
+    bool TeleportPromptEnabled;
+    bool PhasingEnabled;
 
     void LoadConfig(/*bool reload*/);
+
+    bool isUnderAttack(uint32 defendCityID) const;
+
+private:
+    typedef std::map<uint32, DefendCityData> DefendCityMap;
+    DefendCityMap defendCityMap;
 };
 
 #define sDefendCityMgr DefendCityMgr::instance()
